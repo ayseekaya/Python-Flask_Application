@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/login.css') }}"
+    />
+  </head>
+  <body>
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100">
+          <div class="login100-pic js-tilt" data-tilt>
+            <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" alt="IMG" />
+          </div>
+          <form method="POST" class="login100-form validate-form">
+            <span class="login100-form-title">
+              Kayıt Ol
+            </span>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Valid email is required: ex@abc.xyz"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="email"
+                placeholder="E-posta Adresi"
+              />
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Username is required"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="username"
+                placeholder="Kullanıcı Adı"
+              />
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Password is required"
+            >
+              <input
+                class="input100"
+                type="password"
+                name="password"
+                placeholder="Parola"
+              />
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button type="submit" class="login100-form-btn">
+                Kayıt
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

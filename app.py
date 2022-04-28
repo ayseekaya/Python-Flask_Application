@@ -66,7 +66,7 @@ def index(id):
 
     cities = City.query.filter_by(user_id=id)
 
-    url="https://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=fbe2be5555d75f3901e721cc5605867d"
+    url="https://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid={api_key}"
     
     cities_list=[]
     for citydb in cities:
